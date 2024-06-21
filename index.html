@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop - Umów wizytę</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Barbershop - Umów wizytę</h1>
+
+        <div class="form-container">
+            <h2>Umów wizytę</h2>
+            <form id="appointmentForm">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Godzina:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Umów wizytę</button>
+            </form>
+        </div>
+
+        <div class="appointments-container">
+            <h2>Umówione wizyty</h2>
+            <ul id="appointmentsList">
+            </ul>
+        </div>
+
+        <div class="rating-container">
+            <h2>Oceń naszą stronę</h2>
+            <form id="ratingForm">
+                <label for="rating">Twoja ocena (1-5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button type="submit">Oceń</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
