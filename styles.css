@@ -110,3 +110,9 @@ li button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.no-appointments {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
